@@ -20,5 +20,4 @@ int main() {
     csec=((z>='A' && z<='Z') ||(z>='a' && z<='z'));
     printf("%d%d%d", asec, bsec, csec);
     return 0;
-
 }
