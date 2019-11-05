@@ -10,7 +10,7 @@ int main() {
         c5=broj%10;
         if(broj < 10000 || broj > 99999) {
             printf("Nevaliden vlez");
-        } else if (c1==c5 && c2==c4) {
+        } else if ((c1==c5) && (c2==c4)) {
             printf("Palindrom");
         } else printf("Ne e palindrom");
         return 0;
