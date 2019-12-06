@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, j, najgolem;
+    int suma=0, sumamax=0;
+
+    scanf("%d", &n);
+
+    if((n==1) || (n==2) || (n==3)){
+        printf("1");
+    } else {
+        for (i = n - 1; i > 3; i--) {
+            suma=0;
+            for (j = i - 1; j > 0; j--) {
+                if (i % j == 0) {
+                    suma += j;
+                }
+                if (suma > sumamax) {
+                    sumamax = suma;
+                    najgolem = i;
+                }
+            }
+        }
+        printf("%d", najgolem);
+    }
+    return 0;
+}

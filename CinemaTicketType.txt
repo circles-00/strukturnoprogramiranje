@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int ticketNo, ticketType, entranceNo;
+    scanf("%d", &ticketNo);
+
+    ticketType=ticketNo/100;
+    entranceNo=ticketNo%3;
+
+    if(ticketType==1){
+        printf("VIP posetitel ");
+    } else if((ticketType>=2) && (ticketType<=9)) {
+        printf("Regularen posetitel ");
+    }
+    if(entranceNo==0){
+        printf("na vlez 1");
+    } else if(entranceNo==1){
+        printf("na vlez 2");
+    } else if(entranceNo==2){
+        printf("na vlez 3");
+    }
+    return 0;
+}

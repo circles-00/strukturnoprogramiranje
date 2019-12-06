@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int m,n=1;
+    scanf("%d", &m);
+
+    //prv red
+    printf("+");
+    while(n<m-1){
+        printf("*");
+        n++;
+    }
+    printf("+\n");
+    //sreden red
+    for(int i=0; i<m-2; i++){
+        n=1;
+        printf("+");
+        while(n<m-1){
+            printf("%%");
+            n++;
+        }
+        printf("+\n");
+    }
+    //posleden red
+    n=1;
+    printf("+");
+    while(n<m-1){
+        printf("*");
+        n++;
+    }
+    printf("+\n");
+    return 0;
+}
